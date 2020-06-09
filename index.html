@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" href="https://static.kundelik.kz/img/icons/favicon_Kz.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>Kundelik Check</title>
+    <meta name="description" content="Проверь свою успеваемость!">
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(64736353, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/64736353" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+</head>
+<body>
+    <div class="container">
+        <div class="row menu">
+            <div class="col-12 menu-logo">
+                <img src="logo.png" width="300px">
+                <span class="menu-text">Проверь свою успеваемость!</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-3 input-main">
+                <div class="input-main-text">СОР<span class="sub">1</span></div>
+                <div id="sor_1" class="input">
+                    <input onchange="Sor()" id="sor1" type="number" min="0" max="99" placeholder="–" class="input-in">
+                    <span class="slash-input">/</span>
+                    <input onchange="Sor()" id="sor2" type="number" min="0" max="99" placeholder="–" class="input-in">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 input-main">
+                <div class="input-main-text">СОР<span class="sub">2</span></div>
+                <div id="sor_2" class="input">
+                    <input disabled onchange="Sor()" id="sor3" type="number" min="0" max="99" placeholder="–" class="input-in">
+                    <span class="slash-input">/</span>
+                    <input disabled onchange="Sor()" id="sor4" type="number" min="0" max="99" placeholder="–" class="input-in">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 input-main">
+                <div class="input-main-text">СОР<span class="sub">3</span></div>
+                <div id="sor_3" class="input">
+                    <input disabled onchange="Sor()" id="sor5" type="number" min="0" max="99" placeholder="–" class="input-in">
+                    <span class="slash-input">/</span>
+                    <input disabled onchange="Sor()" id="sor6" type="number" min="0" max="99" placeholder="–" class="input-in">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 input-main">
+                <div class="input-main-text">СОР<span class="sub">4</span></div>
+                <div id="sor_4" class="input">
+                    <input disabled onchange="Sor()" id="sor7" type="number" min="0" max="99" placeholder="–" class="input-in">
+                    <span class="slash-input">/</span>
+                    <input disabled onchange="Sor()" id="sor8" type="number" min="0" max="99" placeholder="–" class="input-in">
+                </div> 
+            </div>
+        </div>
+        <div class="row">
+        </div>
+        <div class="row">
+            <div class="col-12 input-main">
+                <div class="input-main-text">СОЧ</div>
+                <div id="soch_1" class="input">
+                    <input onchange="Sor()" id="soch1" type="number" min="0" max="99" placeholder="–" class="input-in">
+                    <span class="slash-input">/</span>
+                    <input onchange="Sor()" id="soch2" type="number" min="0" max="99" placeholder="–" class="input-in">
+                </div> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 sor">
+                <span class="sor-text">% СОР: </span>
+                <span id="sor-out">0.0%</span>
+            </div>
+            <div class="col-6 soch">
+                <span class="soch-text">% СОЧ: </span>
+                <span id="soch-out">0.0%</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 summa">
+                <span class="soch-text">% Сумма: </span>
+                <span id="summa-out">0%</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 output">
+                <span id="output-text">Ответ будет здесь : )</span>   
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+          <span class="dev-text">Designed by Daniel Kaziev.</span><br>
+          <span class="dev-date">2020</span>
+        </div>
+    </footer>
+</body>
+</html>
