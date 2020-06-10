@@ -70,16 +70,16 @@ function Sor() {
                 output_text.innerHTML = "Где-то ошибка ...";
                 document.getElementById("output-text").style.backgroundColor = "#ff6666";
             } else if (result >= 0 && result < 40) {
-                output_text.innerHTML = "Оценка: 2";
+                output_text.innerHTML = "Оценка за четверть: 2";
                 document.getElementById("output-text").style.backgroundColor = "#ff6666";
             } else if (result >= 40 && result < 65) {
-                output_text.innerHTML = "Оценка: 3";
+                output_text.innerHTML = "Оценка за четверть: 3";
                 document.getElementById("output-text").style.backgroundColor = "#f9a23b";
             } else if (result >= 65 && result < 85){
-                output_text.innerHTML = "Оценка: 4";
+                output_text.innerHTML = "Оценка за четверть: 4";
                 document.getElementById("output-text").style.backgroundColor = "#c2d23a";
             } else if (result >= 85 && result <= 100) {
-                output_text.innerHTML = "Оценка: 5";
+                output_text.innerHTML = "Оценка за четверть: 5";
                 document.getElementById("output-text").style.backgroundColor = "#c2d23a";
             } else {
                 output_text.innerHTML = "Что-то пошло не так ...";
