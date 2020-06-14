@@ -69,33 +69,45 @@ function Sor() {
             if (result < 0) { 
                 output_text.innerHTML = "Где-то ошибка ...";
                 document.getElementById("output-text").style.backgroundColor = "#ff6666";
-                var metaThemeColor = document.querySelector("meta[name=theme-color]");
-                metaThemeColor.setAttribute("content", "#ff6666");
+                var metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
+                metaThemeColorAndroid.setAttribute("content", "#ff6666");
+                var metaThemeColorIphone = document.querySelector("meta[name=apple-mobile-web-app-status-bar-style]");
+                metaThemeColorIphone.setAttribute("content", "#ff6666");
             } else if (result >= 0 && result < 40) {
                 output_text.innerHTML = "Оценка за четверть: 2";
                 document.getElementById("output-text").style.backgroundColor = "#ff6666";
-                var metaThemeColor = document.querySelector("meta[name=theme-color]");
-                metaThemeColor.setAttribute("content", "#ff6666");
+                var metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
+                metaThemeColorAndroid.setAttribute("content", "#ff6666");
+                var metaThemeColorIphone = document.querySelector("meta[name=apple-mobile-web-app-status-bar-style]");
+                metaThemeColorIphone.setAttribute("content", "#ff6666");
             } else if (result >= 40 && result < 65) {
                 output_text.innerHTML = "Оценка за четверть: 3";
                 document.getElementById("output-text").style.backgroundColor = "#f9a23b";
-                var metaThemeColor = document.querySelector("meta[name=theme-color]");
-                metaThemeColor.setAttribute("content", "#f9a23b");
+                var metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
+                metaThemeColorAndroid.setAttribute("content", "#f9a23b");
+                var metaThemeColorIphone = document.querySelector("meta[name=apple-mobile-web-app-status-bar-style]");
+                metaThemeColorIphone.setAttribute("content", "#f9a23b");
             } else if (result >= 65 && result < 85){
                 output_text.innerHTML = "Оценка за четверть: 4";
                 document.getElementById("output-text").style.backgroundColor = "#c2d23a";
-                var metaThemeColor = document.querySelector("meta[name=theme-color]");
-                metaThemeColor.setAttribute("content", "#c2d23a");
+                var metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
+                metaThemeColorAndroid.setAttribute("content", "#c2d23a");
+                var metaThemeColorIphone = document.querySelector("meta[name=apple-mobile-web-app-status-bar-style]");
+                metaThemeColorIphone.setAttribute("content", "#c2d23a");
             } else if (result >= 85 && result <= 100) {
                 output_text.innerHTML = "Оценка за четверть: 5";
                 document.getElementById("output-text").style.backgroundColor = "#c2d23a";
-                var metaThemeColor = document.querySelector("meta[name=theme-color]");
-                metaThemeColor.setAttribute("content", "#c2d23a");
+                var metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
+                metaThemeColorAndroid.setAttribute("content", "#c2d23a");
+                var metaThemeColorIphone = document.querySelector("meta[name=apple-mobile-web-app-status-bar-style]");
+                metaThemeColorIphone.setAttribute("content", "#c2d23a");
             } else {
                 output_text.innerHTML = "Что-то пошло не так ...";
                 document.getElementById("output-text").style.backgroundColor = "#ff6666";
-                var metaThemeColor = document.querySelector("meta[name=theme-color]");
-                metaThemeColor.setAttribute("content", "#ff6666");
+                var metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
+                metaThemeColorAndroid.setAttribute("content", "#ff6666");
+                var metaThemeColorIphone = document.querySelector("meta[name=apple-mobile-web-app-status-bar-style]");
+                metaThemeColorIphone.setAttribute("content", "#ff6666");
             }
         }
     }
