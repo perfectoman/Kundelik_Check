@@ -14,7 +14,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="description" content="Проверь свою успеваемость!">
     <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+    <script type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
@@ -24,9 +24,9 @@
          trackLinks:true,
          accurateTrackBounce:true
     });
- </script>
- <noscript><div><img src="https://mc.yandex.ru/watch/64736353" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
- <!-- /Yandex.Metrika counter -->
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/64736353" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 <body>
     <div class="container">
@@ -40,33 +40,33 @@
             <div class="col-6 col-md-3 input-main">
                 <div class="input-main-text">СОР<span class="sub">1</span></div>
                 <div id="sor_1" class="input">
-                    <input onchange="Sor()" id="sor1" type="number" min="0" max="99" placeholder="–" class="input-in">
+                    <input onchange="Main()" id="sor1" type="number" min="0" max="100" placeholder="–" class="input-in">
                     <span class="slash-input">/</span>
-                    <input onchange="Sor()" id="sor2" type="number" min="0" max="99" placeholder="–" class="input-in">
+                    <input onchange="Main()" id="sor2" type="number" min="0" max="100" placeholder="–" class="input-in">
                 </div>
             </div>
             <div class="col-6 col-md-3 input-main">
                 <div class="input-main-text">СОР<span class="sub">2</span></div>
                 <div id="sor_2" class="input">
-                    <input disabled onchange="Sor()" id="sor3" type="number" min="0" max="99" placeholder="–" class="input-in">
+                    <input onchange="Main()" id="sor3" type="number" min="0" max="100" placeholder="–" class="input-in">
                     <span class="slash-input">/</span>
-                    <input disabled onchange="Sor()" id="sor4" type="number" min="0" max="99" placeholder="–" class="input-in">
+                    <input onchange="Main()" id="sor4" type="number" min="0" max="100" placeholder="–" class="input-in">
                 </div>
             </div>
             <div class="col-6 col-md-3 input-main">
                 <div class="input-main-text">СОР<span class="sub">3</span></div>
                 <div id="sor_3" class="input">
-                    <input disabled onchange="Sor()" id="sor5" type="number" min="0" max="99" placeholder="–" class="input-in">
+                    <input onchange="Main()" id="sor5" type="number" min="0" max="100" placeholder="–" class="input-in">
                     <span class="slash-input">/</span>
-                    <input disabled onchange="Sor()" id="sor6" type="number" min="0" max="99" placeholder="–" class="input-in">
+                    <input onchange="Main()" id="sor6" type="number" min="0" max="100" placeholder="–" class="input-in">
                 </div>
             </div>
             <div class="col-6 col-md-3 input-main">
                 <div class="input-main-text">СОР<span class="sub">4</span></div>
                 <div id="sor_4" class="input">
-                    <input disabled onchange="Sor()" id="sor7" type="number" min="0" max="99" placeholder="–" class="input-in">
+                    <input onchange="Main()" id="sor7" type="number" min="0" max="100" placeholder="–" class="input-in">
                     <span class="slash-input">/</span>
-                    <input disabled onchange="Sor()" id="sor8" type="number" min="0" max="99" placeholder="–" class="input-in">
+                    <input onchange="Main()" id="sor8" type="number" min="0" max="100" placeholder="–" class="input-in">
                 </div> 
             </div>
         </div>
@@ -74,9 +74,9 @@
             <div class="col-12 input-main">
                 <div class="input-main-text">СОЧ</div>
                 <div id="soch_1" class="input">
-                    <input onchange="Sor()" id="soch1" type="number" min="0" max="99" placeholder="–" class="input-in">
+                    <input onchange="Main()" id="soch1" type="number" min="0" max="100" placeholder="–" class="input-in">
                     <span class="slash-input">/</span>
-                    <input onchange="Sor()" id="soch2" type="number" min="0" max="99" placeholder="–" class="input-in">
+                    <input onchange="Main()" id="soch2" type="number" min="0" max="100" placeholder="–" class="input-in">
                 </div> 
             </div>
         </div>
@@ -98,14 +98,15 @@
         </div>
         <div class="row">
             <div class="col-12 output">
-                <span id="output-text"> </span>   
+                <span id="output-text"></span>   
             </div>
         </div>
     </div>
     <footer class="footer">
+        <div class="vk"><a href="https://vk.com/kundelik_check" target="_blMain">Группа ВКонтакте.</a></div>
         <div class="container">
-          <span class="dev-text">Designed by Daniel Kaziev.</span><br>
-          <span class="dev-date">2020</span>
+            <span class="dev-text">Designed by Daniel Kaziev.</span><br>
+            <span class="dev-date">2020</span>
         </div>
     </footer>
 </body>

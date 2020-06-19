@@ -23,6 +23,16 @@ body{
     background: url(bg.png) repeat;
     margin-bottom: 60px;
 }
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 2px;
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+    font-weight: 2px;
+}
 .menu{
     text-align: center;
     margin-top: 20px;
@@ -81,7 +91,7 @@ body{
     text-align: center;
     margin-top: 15px;
     font-size: 20px;
-    margin-bottom: 75px;
+    margin-bottom: 100px;
 }
 .summa{
     padding-top: 15px;
@@ -99,16 +109,29 @@ body{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 95px;
     text-align: center;
     color: black;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
 }
 .dev-text{
-    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
 }
 .dev-date{
-    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
-
+    vertical-align: super;
+}
+.vk{
+    background-color: #4680C2;
+    color: #FFFFFF;
+    border-radius: 9px;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 17px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 2px;
 }
