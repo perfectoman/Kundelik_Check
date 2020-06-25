@@ -23,11 +23,11 @@ body{
     background: url(bg.png) repeat;
     margin-bottom: 60px;
 }
-a{
+/* a{
     text-decoration: none;
     color: white;
     font-weight: 2px;
-}
+} */
 a:hover{
     text-decoration: none;
     color: rgb(230, 230, 230);
@@ -125,8 +125,8 @@ a:hover{
 .vk{
     background-color: #4680C2;
     color: #FFFFFF;
-    border-radius: 9px;
-    width: 200px;
+    border-radius: 5px;
+    width: 201.65px;
     text-align: center;
     margin: auto;
     margin-bottom: 20px;
@@ -134,4 +134,7 @@ a:hover{
     padding: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 2px;
+}
+.vk:hover{
+    color: rgb(230, 230, 230);;
 }
