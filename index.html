@@ -36,7 +36,7 @@
                 <span class="menu-text">Проверь свою успеваемость!</span>
             </div>
         </div>
-        <div class="row">
+        <div class="row main-content">
             <div class="col-6 col-md-3 input-main">
                 <div class="input-main-text">СОР<span class="sub">1</span></div>
                 <div id="sor_1" class="input">
@@ -103,7 +103,17 @@
         </div>
     </div>
     <footer class="footer">
-        <a href="https://vk.com/kundelik_check" target="_blMain"><div class="vk">Группа ВКонтакте</div></a>
+        <div class="row grade">
+            <div class="col-12 col-sm-6">
+                <div class="box">
+                    <input onchange="CallFirstGrade()" type="checkbox" class="custom-checkbox" id="first-grade" name="first-grade" value="yes">
+                    <label for="first-grade">1 класс</label>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <a href="https://vk.com/kundelik_check" target="_blMain"><div class="vk">Группа ВКонтакте</div></a>
+            </div>
+        </div>
         <div class="container">
             <span class="dev-text">Designed by Daniel Kaziev.</span><br>
             <span class="dev-date">2020</span>
