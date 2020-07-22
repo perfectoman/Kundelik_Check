@@ -388,6 +388,23 @@ function FirstGrade() {
         
     }
 }
+function CheckIsEmpty() {
+    let sor1 = document.getElementById("sor1").value
+    let sor2 = document.getElementById("sor2").value
+    let sor3 = document.getElementById("sor3").value
+    let sor4 = document.getElementById("sor4").value
+    let sor5 = document.getElementById("sor5").value
+    let sor6 = document.getElementById("sor6").value
+    let sor7 = document.getElementById("sor7").value
+    let sor8 = document.getElementById("sor8").value
+    let soch1 = document.getElementById("soch1").value
+    let soch2 = document.getElementById("soch2").value
+    if (sor1 == "" && sor2 == "" && sor3 == "" && sor4 == "" && sor5 == "" && sor6 == "" && sor7 == "" && sor8 == "" && soch1 == "" && soch2 == "" ) {
+        let output_text = document.getElementById("output-text");
+        output_text.innerHTML = "";
+        output_text.removeAttribute('style');
+    }
+}
 function CallFirstGrade() {
     var element = document.querySelector('input[type=checkbox]');    
     if (element.checked) {
@@ -402,6 +419,7 @@ function CallFirstGrade() {
         document.getElementById("soch1").setAttribute("onchange", "FirstGrade()");
         document.getElementById("soch2").setAttribute("onchange", "FirstGrade()");
         FirstGrade()
+        CheckIsEmpty()
     } else {
         document.getElementById("sor1").setAttribute("onchange", "Main()");
         document.getElementById("sor2").setAttribute("onchange", "Main()");
@@ -414,5 +432,6 @@ function CallFirstGrade() {
         document.getElementById("soch1").setAttribute("onchange", "Main()");
         document.getElementById("soch2").setAttribute("onchange", "Main()");
         Main()
+        CheckIsEmpty()
     }
 }
