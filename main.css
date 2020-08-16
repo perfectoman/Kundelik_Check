@@ -48,11 +48,33 @@ a:hover{
     text-align: center;
     margin: auto;
 }
+.input-so{
+    border-radius: 5px;
+    background-color: #c2d23a;
+    color: white;
+    font-weight: 650;
+    width: 157.5px;
+    height: 36px;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
 .input-in{
     background: none;
     border: none;
     width: 55px;
     font-size: 20px;
+    color: white;
+    text-align: center;
+    font-weight: 650;
+    font-family: sans-serif, 'Montserrat';
+}
+.input-in-so{
+    background: none;
+    border: none;
+    width: 61.87px;
+    height: 33.75px;
+    font-size: 25px;
     color: white;
     text-align: center;
     font-weight: 650;
@@ -64,6 +86,7 @@ a:hover{
     white-space: nowrap;
     text-align: center;
 }
+
 .input-main{
     padding-bottom: 20px;
     padding-top: 20px;
@@ -83,7 +106,22 @@ a:hover{
     text-align: left;
     font-size: 20px;
 }
+.output-pre-exo{
+    background-color: #c2d23a;
+    text-align: center;
+    padding: 0.5px 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    white-space: nowrap;
+}
 .output{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+#output-so{
     text-align: center;
     margin-top: 15px;
     font-size: 20px;
@@ -101,14 +139,20 @@ a:hover{
     border-radius: 5px;
     color: white;
 }
-.main-content{
+#output-text-so{
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+#main-content{
     margin-top: -15px;
 }
 .footer{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 85px;
+    height: 125px;
     text-align: center;
     color: black;
     font-family: 'Montserrat', sans-serif;
@@ -136,11 +180,17 @@ a:hover{
 .vk:hover{
     color: rgb(230, 230, 230);;
 }
-.grade{
+.vk-grp{
     text-align: center;
     padding-bottom: 10px;
     width: 500px;
     margin: auto;
+}
+.grade{
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    height: 40px;
 }
 .custom-checkbox{
     position: absolute;
@@ -179,19 +229,30 @@ a:hover{
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    margin: auto;
     padding: 5px;
     border-radius: 5px;
     height: 30px;
 }
 @media screen and (max-width: 575px){
+    .vk-grp{
+        width: 100%;
+    }
     .grade{
         width: 100%;
+        height: 40px;
     }
     .box{
         margin-bottom: 10px;
+        width: 100%;
     }
-    .footer{
-        height: 125px;
+    .left{
+        padding-right: 5px;
+    }
+    .right{
+        padding-left: 5px;
+    }
+    .padd{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

@@ -406,8 +406,8 @@ function CheckIsEmpty() {
     }
 }
 function CallFirstGrade() {
-    var element = document.querySelector('input[type=checkbox]');    
-    if (element.checked) {
+    var cont1 = document.querySelector('div.all.box input[type=checkbox]');    
+    if (cont1.checked) {
         document.getElementById("sor1").setAttribute("onchange", "FirstGrade()");
         document.getElementById("sor2").setAttribute("onchange", "FirstGrade()");
         document.getElementById("sor3").setAttribute("onchange", "FirstGrade()");
@@ -433,5 +433,147 @@ function CallFirstGrade() {
         document.getElementById("soch2").setAttribute("onchange", "Main()");
         Main()
         CheckIsEmpty()
+    }
+    var cont3 = document.querySelector('div.so.box input[type=checkbox]');
+    if (cont3.checked) {
+        OneSO()
+    } else {
+        document.getElementById("output-so").setAttribute("hidden", "hidden");
+    }
+}
+function CallOneSO() {
+    var cont2 = document.querySelector('div.so.box input[type=checkbox]');    
+    if (cont2.checked) {
+        document.getElementById("main-so").removeAttribute("hidden", "hidden");
+        document.getElementById("output-so").removeAttribute("hidden", "hidden");
+        document.getElementById("main-content").setAttribute("hidden", "hidden");
+        document.getElementById("soch-so").setAttribute("hidden", "hidden");
+        document.getElementById("so-sch").setAttribute("hidden", "hidden");
+        document.getElementById("so-schs").setAttribute("hidden", "hidden");
+        document.getElementById("so-otv").setAttribute("hidden", "hidden");
+    } else {
+        document.getElementById("main-so").setAttribute("hidden", "hidden");
+        document.getElementById("output-so").setAttribute("hidden", "hidden");
+        document.getElementById("main-content").removeAttribute("hidden", "hidden");
+        document.getElementById("soch-so").removeAttribute("hidden", "hidden");
+        document.getElementById("so-sch").removeAttribute("hidden", "hidden");
+        document.getElementById("so-schs").removeAttribute("hidden", "hidden");
+        document.getElementById("so-otv").removeAttribute("hidden", "hidden");
+    }
+    var cont4 = document.querySelector('div.so.box input[type=checkbox]');
+    if (cont4.checked) {
+        OneSO()
+    } else {
+        document.getElementById("output-so").setAttribute("hidden", "hidden");
+    }
+}
+function OneSO() {
+    var cont3 = document.querySelector('div.all.box input[type=checkbox]');    
+    if (cont3.checked) {
+        let so1 = Number(document.getElementById("so1").value);
+        let so2 = Number(document.getElementById("so2").value);
+        let output_pre = document.getElementById("output-pre");
+        let output_pre_otv = document.getElementById("output-pre-otv"); 
+        document.getElementById("output-so").removeAttribute("hidden", "hidden");
+        var result_so = so1 / so2 * 100;
+        if (isNaN(result_so) == true || isFinite(result_so) == false){
+            output_pre.innerHTML = "0%";
+        } else {
+            output_pre.innerHTML = result_so.toFixed(1) + "%";
+            if (result_so < 0) {
+                output_pre.innerHTML = "ERROR";
+                output_pre_otv.innerHTML = "ERROR";
+                output_pre.style.backgroundColor = "#ff6666";
+                output_pre_otv.style.backgroundColor = "#ff6666";
+                let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
+                metaThemeColorAndroid.setAttribute("content", "#ff6666");
+            } else if (result_so >= 0 && result_so < 21) {
+                output_pre.style.backgroundColor = "#ff6666";
+                output_pre_otv.style.backgroundColor = "#ff6666";
+                output_pre_otv.innerHTML = "ПЛХ(2)";
+                let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
+                metaThemeColorAndroid.setAttribute("content", "#ff6666");
+            } else if (result_so >= 21 && result_so < 51) {
+                output_pre.style.backgroundColor = "#f9a23b";
+                output_pre_otv.style.backgroundColor = "#f9a23b";
+                output_pre_otv.innerHTML = "УДВ(3)";
+                let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
+                metaThemeColorAndroid.setAttribute("content", "#f9a23b");
+            } else if (result_so >= 51 && result_so < 81){
+                output_pre.style.backgroundColor = "#c2d23a";
+                output_pre_otv.style.backgroundColor = "#c2d23a";
+                output_pre_otv.innerHTML = "ХОР(4)";
+                let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
+                metaThemeColorAndroid.setAttribute("content", "#c2d23a");
+            } else if (result_so >= 81 && result_so <= 100) {
+                output_pre.style.backgroundColor = "#c2d23a";
+                output_pre_otv.style.backgroundColor = "#c2d23a";
+                output_pre_otv.innerHTML = "ОТЛ(5)";
+                let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
+                metaThemeColorAndroid.setAttribute("content", "#c2d23a");
+            } else if (result_so > 100){
+                output_pre.innerHTML = "ERROR";
+                output_pre_otv.innerHTML = "ERROR";
+                output_pre.style.backgroundColor = "#ff6666";
+                output_pre_otv.style.backgroundColor = "#ff6666";
+                let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
+                metaThemeColorAndroid.setAttribute("content", "#ff6666");
+            } else {
+    
+            }
+        }
+    } else {
+        let so1 = Number(document.getElementById("so1").value);
+        let so2 = Number(document.getElementById("so2").value);
+        let output_pre = document.getElementById("output-pre");
+        let output_pre_otv = document.getElementById("output-pre-otv"); 
+        document.getElementById("output-so").removeAttribute("hidden", "hidden");
+        var result_so = so1 / so2 * 100;
+        if (isNaN(result_so) == true || isFinite(result_so) == false){
+            output_pre.innerHTML = "0%";
+        } else {
+            output_pre.innerHTML = result_so.toFixed(1) + "%";
+            if (result_so < 0) {
+                output_pre.innerHTML = "ERROR";
+                output_pre_otv.innerHTML = "ERROR";
+                output_pre.style.backgroundColor = "#ff6666";
+                output_pre_otv.style.backgroundColor = "#ff6666";
+                let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
+                metaThemeColorAndroid.setAttribute("content", "#ff6666");
+            } else if (result_so >= 0 && result_so < 40) {
+                output_pre.style.backgroundColor = "#ff6666";
+                output_pre_otv.style.backgroundColor = "#ff6666";
+                output_pre_otv.innerHTML = "ПЛХ(2)";
+                let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
+                metaThemeColorAndroid.setAttribute("content", "#ff6666");
+            } else if (result_so >= 40 && result_so < 65) {
+                output_pre.style.backgroundColor = "#f9a23b";
+                output_pre_otv.style.backgroundColor = "#f9a23b";
+                output_pre_otv.innerHTML = "УДВ(3)";
+                let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
+                metaThemeColorAndroid.setAttribute("content", "#f9a23b");
+            } else if (result_so >= 65 && result_so < 85){
+                output_pre.style.backgroundColor = "#c2d23a";
+                output_pre_otv.style.backgroundColor = "#c2d23a";
+                output_pre_otv.innerHTML = "ХОР(4)";
+                let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
+                metaThemeColorAndroid.setAttribute("content", "#c2d23a");
+            } else if (result_so >= 85 && result_so <= 100) {
+                output_pre.style.backgroundColor = "#c2d23a";
+                output_pre_otv.style.backgroundColor = "#c2d23a";
+                output_pre_otv.innerHTML = "ОТЛ(5)";
+                let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
+                metaThemeColorAndroid.setAttribute("content", "#c2d23a");
+            } else if (result_so > 100){
+                output_pre.innerHTML = "ERROR";
+                output_pre_otv.innerHTML = "ERROR";
+                output_pre.style.backgroundColor = "#ff6666";
+                output_pre_otv.style.backgroundColor = "#ff6666";
+                let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
+                metaThemeColorAndroid.setAttribute("content", "#ff6666");
+            } else {
+    
+            }
+        }
     }
 }
