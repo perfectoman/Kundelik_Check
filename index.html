@@ -36,6 +36,61 @@
                 <span class="menu-text">Проверь свою успеваемость!</span>
             </div>
         </div>
+    </div>
+    <div id="new-container" class="container">
+        <div class="row new-pln">
+            <div class="col-6 col-md-3 input-main">
+                <div class="input-main-text">Сумма ФО</div>
+                <div id="percent-new" class="input">
+                    <input onchange="NewPlan()" id="sum" type="number" min="0" max="1000" placeholder="–" class="input-in-new">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 input-main">
+                <div class="input-main-text">Кол-во ФО</div>
+                <div class="input">
+                    <input onchange="NewPlan()" id="quan" type="number" min="0" max="1000" placeholder="–" class="input-in-new">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 input-main">
+                <div class="input-main-text">СОР</div>
+                <div id="sor-new" class="input">
+                    <input onchange="NewPlan()" id="sor1-new" type="number" min="0" max="100" placeholder="–" class="input-in">
+                    <span class="slash-input">/</span>
+                    <input onchange="NewPlan()" id="sor2-new" type="number" min="0" max="100" placeholder="–" class="input-in">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 input-main">
+                <div class="input-main-text">СОЧ</div>
+                <div id="soch-new" class="input">
+                    <input onchange="NewPlan()" id="soch1-new" type="number" min="0" max="100" placeholder="–" class="input-in">
+                    <span class="slash-input">/</span>
+                    <input onchange="NewPlan()" id="soch2-new" type="number" min="0" max="100" placeholder="–" class="input-in">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 sor">
+                <span class="op-text">За 1 ОП: </span>
+                <span id="op-out-new">0.0%</span>
+            </div>
+            <div class="col-6 soch">
+                <span class="soch-text">% СОЧ: </span>
+                <span id="soch-out-new">0.0%</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 summa">
+                <span class="soch-text">% Сумма: </span>
+                <span id="summa-out-new">0%</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 output">
+                <span id="output-text-new"></span>   
+            </div>
+        </div>
+    </div>
+    <div hidden id="main-container" class="container">
         <div id="main-content" class="row">
             <div class="col-6 col-md-3 input-main">
                 <div class="input-main-text">СОР<span class="sub">1</span></div>
@@ -80,22 +135,7 @@
                 </div> 
             </div>
         </div>
-        <div hidden id="main-so" class="row">
-            <div class="col-12 input-main">
-                <div class="input-main-text">Суммативная работа</div>
-                <div id="soch_1" class="input-so">
-                    <input onchange="OneSO()" id="so1" type="number" min="0" max="100" placeholder="–" class="input-in-so">
-                    <span class="slash-input">/</span>
-                    <input onchange="OneSO()" id="so2" type="number" min="0" max="100" placeholder="–" class="input-in-so">
-                </div> 
-            </div>
-        </div>
-        <div  class="row">
-            <div hidden="hidden" id="output-so" class="padd col-12">
-                При <span class="output-pre-exo" id="output-pre">0%</span> из <span class="output-pre-exo">100%</span> ты получишь оценку <span class="output-pre-exo" id="output-pre-otv">&#129300;</span> за работу.
-            </div>
-        </div>
-        <div id="so-sch" class="row">
+        <div class="row">
             <div class="col-6 sor">
                 <span class="sor-text">% СОР: </span>
                 <span id="sor-out">0.0%</span>
@@ -105,29 +145,81 @@
                 <span id="soch-out">0.0%</span>
             </div>
         </div>
-        <div id="so-schs" class="row">
+        <div class="row">
             <div class="col-12 summa">
                 <span class="soch-text">% Сумма: </span>
                 <span id="summa-out">0%</span>
             </div>
         </div>
-        <div id="so-otv" class="row">
+        <div class="row">
             <div class="col-12 output">
                 <span id="output-text"></span>   
+            </div>
+        </div>
+    </div>
+    <div hidden id="so-container" class="container">
+        <div id="main-so" class="row">
+            <div class="col-12 input-main">
+                <div class="input-main-text">Суммативная работа</div>
+                <div id="so-main" class="input-so">
+                    <input onchange="OneSO()" id="so1" type="number" min="0" max="100" placeholder="–" class="input-in-so">
+                    <span class="slash-input">/</span>
+                    <input onchange="OneSO()" id="so2" type="number" min="0" max="100" placeholder="–" class="input-in-so">
+                </div> 
+            </div>
+        </div>
+        <div hidden id="output-so-help" class="row">
+            <div id="output-so" class="padd col-12">
+                При <span class="output-pre-exo" id="output-pre">? %</span> из <span class="output-pre-exo">100%</span> ты получишь оценку <span class="output-pre-exo" id="output-pre-otv">&#129300;</span> за работу.
+            </div>
+        </div>
+    </div>
+    <div hidden id="fo-container" class="container">
+        <div id="main-so" class="row">
+            <div class="col-12 input-main">
+                <div class="input-main-text">Формативная работа</div>
+                <div id="fo-main" class="input-so">
+                    <input onchange="OneFO()" id="fo1" type="number" min="0" max="10" placeholder="–" class="input-in-so">
+                    <span class="slash-input">/</span>
+                    <span class="input-in-fo">10</span>
+                </div> 
+            </div>
+        </div>
+        <div hidden id="output-fo-help" class="row">
+            <div class="col-12 output-fo">
+                <span id="output-fo-one"></span>   
+            </div>
+        </div>
+        <div hidden id="output-fo-two" class="row output-fo-h">
+            <div id="output-fo" class="padd col-12">
             </div>
         </div>
     </div>
     <footer class="footer">
         <div class="row grade">
             <div class="col-6 left">
-                <div class="all box">
+                <div class="all box-old">
                     <input onchange="CallFirstGrade()" type="checkbox" class="custom-checkbox" id="first-grade" name="first-grade" value="yes">
                     <label for="first-grade">1 класс</label>
                 </div>
             </div>
             <div class="col-6 right">
+                <div class="all box">
+                    <input onchange="CallOldGrade()" type="checkbox" class="custom-checkbox" id="old-grade" name="old-grade" value="yes">
+                    <label for="old-grade">С.П.О.</label>
+                </div>
+            </div>
+        </div>
+        <div class="row grade">
+            <div class="col-6 left">
+                <div class="all box-fo">
+                    <input onchange="CallOneFO()" type="checkbox" class="custom-checkbox" id="fo-pln" name="fo-pln" value="yes">
+                    <label for="fo-pln">За 1 ФО</label>
+                </div>
+            </div>
+            <div class="col-6 right">
                 <div class="so box">
-                    <input onchange="CallOneSO()" type="checkbox" class="custom-checkbox" id="sor/soch" name="first-grade" value="yes">
+                    <input onchange="CallOneSO()" type="checkbox" class="custom-checkbox" id="sor/soch" name="sor/soch" value="yes">
                     <label for="sor/soch">За 1 СО</label>
                 </div>
             </div>
