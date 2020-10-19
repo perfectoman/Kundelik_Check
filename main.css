@@ -139,6 +139,9 @@ a:hover{
     text-align: left;
     font-size: 20px;
 }
+#new-container{
+    margin-top: -15px;
+}
 .output-pre-exo{
     background-color: #c2d23a;
     text-align: center;
@@ -152,7 +155,7 @@ a:hover{
     text-align: center;
     margin-top: 15px;
     font-size: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 .output-fo{
     text-align: center;
@@ -307,7 +310,7 @@ a:hover{
     font-family: 'Montserrat', sans-serif;
     color: white;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 4px;
     height: 30px;
 }
 .box-fo{
@@ -317,7 +320,7 @@ a:hover{
     font-family: 'Montserrat', sans-serif;
     color: white;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 4px;
     height: 30px;
 }
 .box-old{
@@ -327,7 +330,7 @@ a:hover{
     font-family: 'Montserrat', sans-serif;
     color: white;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 4px;
     height: 30px;
 }
 @media screen and (max-width: 575px){
@@ -359,4 +362,16 @@ a:hover{
     .box-old{
         width: auto;
     }
+}
+.qws{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    vertical-align: top;
+    border: 0.7px solid black;
+    width: 14px;
+    height: 14px;
+    border-radius: 90px;
+    line-height: 13px;
+    cursor: help;
 }
