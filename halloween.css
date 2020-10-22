@@ -36,43 +36,6 @@ h1 {
   z-index: -1;
   opacity: 0.2;
 }
-
-@-moz-keyframes flicker {
-  0%, 6%, 12% {
-    text-shadow: none;
-    color: #111111;
-  }
-  3%, 9% {
-    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6);
-    color: #fa6701;
-  }
-  60% {
-    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4), 0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
-    color: #fa6701;
-  }
-  100% {
-    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4), 0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
-    color: #fa6701;
-  }
-}
-@-webkit-keyframes flicker {
-  0%, 6%, 12% {
-    text-shadow: none;
-    color: #111111;
-  }
-  3%, 9% {
-    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6);
-    color: #fa6701;
-  }
-  60% {
-    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4), 0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
-    color: #fa6701;
-  }
-  100% {
-    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4), 0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
-    color: #fa6701;
-  }
-}
 @keyframes flicker {
   0%, 6%, 12% {
     text-shadow: none;
@@ -83,11 +46,11 @@ h1 {
     color: #fa6701;
   }
   60% {
-    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4), 0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6);
     color: #fa6701;
   }
   100% {
-    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4), 0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6);
     color: #fa6701;
   }
 }
