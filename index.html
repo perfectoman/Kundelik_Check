@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- Start Halloween --> 
+    <link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- End Halloween --> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, shrink-to-fit=no">
     <link rel="icon" href="https://static.kundelik.kz/img/icons/favicon_Kz.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
@@ -28,6 +32,7 @@
  </script>
  <noscript><div><img src="https://mc.yandex.ru/watch/64736353" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
  <!-- /Yandex.Metrika counter -->
+ <link rel="stylesheet" href="halloween.css">
 </head>
 <body>
     <div class="container">
@@ -38,18 +43,27 @@
             </div>
         </div>
     </div>
+<!-- Start Halloween -->
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>Happy Halloween!</h1>
+        </div>
+    </div>
+</div>
+<!-- End Halloween -->
     <form>
         <div id="new-container" class="container">
             <div class="row new-pln">
                 <div class="col-6 col-md-3 input-main">
                     <div class="input-main-text">Сумма ФО</div>
+                    <!-- <span id="qws-sum" class="qws">?</span> -->
                     <div id="percent-new" class="input">
                         <input onchange="NewPlan()" id="sum" type="number" min="0" max="1000" placeholder="–" class="input-in-new">
                     </div>
                 </div>
                 <div class="col-6 col-md-3 input-main">
                     <div class="input-main-text">Кол-во ФО</div>
-                    <!-- <span class="qws">?</span> -->
                     <div class="input">
                         <input onchange="NewPlan()" id="quan" type="number" min="0" max="1000" placeholder="–" class="input-in-new">
                     </div>
@@ -198,9 +212,13 @@
                 <span id="output-fo-one"></span>   
             </div>
         </div>
-        <div hidden id="output-fo-two" class="row output-fo-h">
-            <div id="output-fo" class="padd col-12">
+        <div hidden id="output-fo-help-new" class="row">
+            <div class="col-12 output-fo">
+                <span id="output-fo-three"></span>   
             </div>
+        </div>
+        <div hidden id="output-fo-two" class="row output-fo-h">
+            <div id="output-fo" class="padd col-12"></div>
         </div>
     </div>
     <footer class="footer">

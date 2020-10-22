@@ -1,0 +1,93 @@
+h1 {
+  font-family: 'Eater', cursive;
+  font-size: 60px;
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 25px;
+  color: #111111;
+  -moz-animation: flicker 4s 0s infinite;
+  -webkit-animation: flicker 4s 0s infinite;
+  animation: flicker 4s 0s infinite;
+}
+@media screen and (max-width: 575px){
+  h1{
+    font-size: 50px;
+    margin-top: -20px;
+  }
+}
+.web-right {
+  position: absolute;
+  height: 200px;
+  width: auto;
+  right: -10px;
+  top: -10px;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.web-left {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  z-index: -1;
+  opacity: 0.2;
+}
+
+@-moz-keyframes flicker {
+  0%, 6%, 12% {
+    text-shadow: none;
+    color: #111111;
+  }
+  3%, 9% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6);
+    color: #fa6701;
+  }
+  60% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4), 0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
+    color: #fa6701;
+  }
+  100% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4), 0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
+    color: #fa6701;
+  }
+}
+@-webkit-keyframes flicker {
+  0%, 6%, 12% {
+    text-shadow: none;
+    color: #111111;
+  }
+  3%, 9% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6);
+    color: #fa6701;
+  }
+  60% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4), 0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
+    color: #fa6701;
+  }
+  100% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4), 0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
+    color: #fa6701;
+  }
+}
+@keyframes flicker {
+  0%, 6%, 12% {
+    text-shadow: none;
+    color: #111111;
+  }
+  3%, 9% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6);
+    color: #fa6701;
+  }
+  60% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4), 0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
+    color: #fa6701;
+  }
+  100% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4), 0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
+    color: #fa6701;
+  }
+}

@@ -196,6 +196,12 @@ a:hover{
     border-radius: 5px;
     color: white;
 }
+#output-fo-three{
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
 .summa{
     padding-top: 15px;
     padding-bottom: 5px;
@@ -368,10 +374,12 @@ a:hover{
     font-size: 13px;
     font-weight: 500;
     vertical-align: top;
-    border: 0.7px solid black;
+    border: 0.7px solid #666;
+    color: #666;
     width: 14px;
     height: 14px;
     border-radius: 90px;
-    line-height: 13px;
+    line-height: 13.5px;
     cursor: help;
+    font-family: 'Roboto', sans-serif;
 }

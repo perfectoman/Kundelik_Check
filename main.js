@@ -843,6 +843,7 @@ function OneFO() {
     var fo = Number(document.getElementById("fo1").value);
     var output_fo = document.getElementById("output-fo");
     var output_fo_one = document.getElementById("output-fo-one");
+    var output_fo_three = document.getElementById("output-fo-three");
     var num1 = "Выполнил до 10 % учебных заданий, допущены ошибки, на уроке пассивный, не делает выводы по итогам обратной связи с учителем, не проявляет самостоятельность при выполнении заданий, не знает пройденный материал";
     var num2 = "Выполнил до 20 % учебных заданий, допущены ошибки, на уроке пассивный, не всегда делает соответствующие выводы по итогам обратной связи с учителем, не проявляет самостоятельность при выполнении заданий";
     var num3 = "Выполнил до 30 % учебных заданий, допущены ошибки, стремится исправить свои ошибки, на уроке иногда проявляет активность, нуждается в поддержке учителя/родителей/сверстников при выполнений учебных заданий";
@@ -864,6 +865,9 @@ function OneFO() {
         output_fo.innerHTML = num1;
         let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
         metaThemeColorAndroid.setAttribute("content", "#ff6666");
+        output_fo_three.innerHTML = "Уровень знаний: низкий";
+        document.getElementById("output-fo-help-new").removeAttribute("hidden", "hidden");
+        document.getElementById("output-fo-three").style.backgroundColor = "#ff6666";
     } else if (fo == 1) {
         document.getElementById("fo-main").style.backgroundColor = "#ff6666";
         document.getElementById("output-fo-one").style.backgroundColor = "#ff6666";
@@ -874,6 +878,9 @@ function OneFO() {
         output_fo.innerHTML = num1;
         let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
         metaThemeColorAndroid.setAttribute("content", "#ff6666");
+        output_fo_three.innerHTML = "Уровень знаний: низкий";
+        document.getElementById("output-fo-help-new").removeAttribute("hidden", "hidden");
+        document.getElementById("output-fo-three").style.backgroundColor = "#ff6666";
     } else if (fo == 2) {
         document.getElementById("fo-main").style.backgroundColor = "#ff6666";
         document.getElementById("output-fo-one").style.backgroundColor = "#ff6666";
@@ -884,6 +891,9 @@ function OneFO() {
         output_fo.innerHTML = num2;
         let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
         metaThemeColorAndroid.setAttribute("content", "#ff6666");
+        output_fo_three.innerHTML = "Уровень знаний: низкий";
+        document.getElementById("output-fo-help-new").removeAttribute("hidden", "hidden");
+        document.getElementById("output-fo-three").style.backgroundColor = "#ff6666";
     } else if (fo == 3){
         document.getElementById("fo-main").style.backgroundColor = "#ff6666";
         document.getElementById("output-fo-one").style.backgroundColor = "#ff6666";
@@ -894,6 +904,9 @@ function OneFO() {
         output_fo.innerHTML = num3;
         let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
         metaThemeColorAndroid.setAttribute("content", "#ff6666");
+        output_fo_three.innerHTML = "Уровень знаний: низкий";
+        document.getElementById("output-fo-help-new").removeAttribute("hidden", "hidden");
+        document.getElementById("output-fo-three").style.backgroundColor = "#ff6666";
     } else if (fo == 4) {
         document.getElementById("fo-main").style.backgroundColor = "#f9a23b";
         document.getElementById("output-fo-one").style.backgroundColor = "#f9a23b";
@@ -904,6 +917,9 @@ function OneFO() {
         output_fo.innerHTML = num4;
         let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
         metaThemeColorAndroid.setAttribute("content", "#f9a23b");
+        output_fo_three.innerHTML = "Уровень знаний: средний";
+        document.getElementById("output-fo-help-new").removeAttribute("hidden", "hidden");
+        document.getElementById("output-fo-three").style.backgroundColor = "#f9a23b";
     } else if (fo == 5) {
         document.getElementById("fo-main").style.backgroundColor = "#f9a23b";
         document.getElementById("output-fo-one").style.backgroundColor = "#f9a23b";
@@ -914,6 +930,9 @@ function OneFO() {
         output_fo.innerHTML = num5;
         let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
         metaThemeColorAndroid.setAttribute("content", "#f9a23b");
+        output_fo_three.innerHTML = "Уровень знаний: средний";
+        document.getElementById("output-fo-help-new").removeAttribute("hidden", "hidden");
+        document.getElementById("output-fo-three").style.backgroundColor = "#f9a23b";
     } else if (fo == 6) {
         document.getElementById("fo-main").style.backgroundColor = "#f9a23b";
         document.getElementById("output-fo-one").style.backgroundColor = "#f9a23b";
@@ -924,6 +943,9 @@ function OneFO() {
         output_fo.innerHTML = num6;
         let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
         metaThemeColorAndroid.setAttribute("content", "#f9a23b");
+        output_fo_three.innerHTML = "Уровень знаний: средний";
+        document.getElementById("output-fo-help-new").removeAttribute("hidden", "hidden");
+        document.getElementById("output-fo-three").style.backgroundColor = "#f9a23b";
     } else if (fo == 7) {
         document.getElementById("fo-main").style.backgroundColor = "#c2d23a";
         document.getElementById("output-fo-one").style.backgroundColor = "#c2d23a";
@@ -934,6 +956,9 @@ function OneFO() {
         output_fo.innerHTML = num7;
         let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
         metaThemeColorAndroid.setAttribute("content", "#c2d23a");
+        output_fo_three.innerHTML = "Уровень знаний: средний";
+        document.getElementById("output-fo-help-new").removeAttribute("hidden", "hidden");
+        document.getElementById("output-fo-three").style.backgroundColor = "#f9a23b";
     } else if (fo == 8) {
         document.getElementById("fo-main").style.backgroundColor = "#c2d23a";
         document.getElementById("output-fo-one").style.backgroundColor = "#c2d23a";
@@ -944,6 +969,9 @@ function OneFO() {
         output_fo.innerHTML = num8;
         let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
         metaThemeColorAndroid.setAttribute("content", "#c2d23a");
+        output_fo_three.innerHTML = "Уровень знаний: высокий";
+        document.getElementById("output-fo-help-new").removeAttribute("hidden", "hidden");
+        document.getElementById("output-fo-three").style.backgroundColor = "#c2d23a";
     } else if (fo == 9) {
         document.getElementById("fo-main").style.backgroundColor = "#c2d23a";
         document.getElementById("output-fo-one").style.backgroundColor = "#c2d23a";
@@ -954,6 +982,9 @@ function OneFO() {
         output_fo.innerHTML = num9;
         let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
         metaThemeColorAndroid.setAttribute("content", "#c2d23a");
+        output_fo_three.innerHTML = "Уровень знаний: высокий";
+        document.getElementById("output-fo-help-new").removeAttribute("hidden", "hidden");
+        document.getElementById("output-fo-three").style.backgroundColor = "#c2d23a";
     } else if (fo == 10) {
         document.getElementById("fo-main").style.backgroundColor = "#c2d23a";
         document.getElementById("output-fo-one").style.backgroundColor = "#c2d23a";
@@ -964,6 +995,9 @@ function OneFO() {
         output_fo.innerHTML = num10;
         let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
         metaThemeColorAndroid.setAttribute("content", "#c2d23a");
+        output_fo_three.innerHTML = "Уровень знаний: высокий";
+        document.getElementById("output-fo-help-new").removeAttribute("hidden", "hidden");
+        document.getElementById("output-fo-three").style.backgroundColor = "#c2d23a";
     } else {
         document.getElementById("fo-main").style.backgroundColor = "#ff6666";
         document.getElementById("output-fo-one").style.backgroundColor = "#ff6666";
@@ -974,6 +1008,9 @@ function OneFO() {
         output_fo.innerHTML = "Упс, у вас ошибка.";
         let metaThemeColorAndroid = document.querySelector("meta[name=theme-color]");
         metaThemeColorAndroid.setAttribute("content", "#ff6666");
+        output_fo_three.innerHTML = "ERROR";
+        document.getElementById("output-fo-help-new").removeAttribute("hidden", "hidden");
+        document.getElementById("output-fo-three").style.backgroundColor = "#ff6666";
     }
 }
 function CallOneFO() {
