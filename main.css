@@ -120,6 +120,9 @@ a:hover{
     white-space: nowrap;
     text-align: center;
 }
+#so-container{
+    padding-bottom: 150px;
+}
 .input-main{
     padding-bottom: 20px;
     padding-top: 20px;
@@ -167,7 +170,6 @@ a:hover{
     text-align: center;
     margin-top: 15px;
     font-size: 20px;
-    margin-bottom: 150px;
 }
 #fo-container{
     margin-bottom: 200px;
