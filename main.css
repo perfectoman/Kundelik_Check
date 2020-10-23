@@ -238,6 +238,7 @@ a:hover{
     color: black;
     font-family: 'Montserrat', sans-serif;
     line-height: 20px;
+    padding-top: 10px;
 }
 .dev-text{
     font-size: 15px;
